@@ -5,7 +5,7 @@ ENV NPM_CONFIG_LOGLEVEL info
 ENV NODE_VERSION 6.11.5
 
 RUN apt-get update && apt-get install -y \
-        wget gnupg
+        wget gnupg make
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
   echo "deb http://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
