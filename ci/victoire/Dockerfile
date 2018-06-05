@@ -2,7 +2,7 @@ FROM php:7.1
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 6.11.5
+ENV NODE_VERSION 8.9.1
 
 RUN apt-get update && apt-get install -y \
         wget gnupg
